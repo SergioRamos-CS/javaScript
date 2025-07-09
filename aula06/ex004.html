@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 20pt;
+        background-color: #c76c6c;
+        color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var nome = window.prompt("Qual é o seu nome?");
+      document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras!<br>`);
+      document.write(`A primeira letra do seu nome é (${nome[0]})<br>`);
+      document.write(
+        `A última letra do seu nome é (${nome[nome.length - 1]})<br>`
+      );
+      document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`);
+      document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br>`);
+    </script>
+  </body>
+</html>
