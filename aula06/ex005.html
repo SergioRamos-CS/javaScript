@@ -14,11 +14,21 @@
   </head>
   <body>
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p>Primeiro paragrafo</p>
+    <p>Segundo paragrafo do <strong>DOM</strong> em JavaScript</p>
     <div>Clica em mim</div>
     <script>
-      
+      var corpo = window.document.body;
+      corpo.style.background = "rgb(10, 10, 10)";
+      var titulo = document.getElementsByTagName("h1")[0];
+      titulo.innerText = "Manipulando o DOM com JavaScript";
+      titulo.style.color = "red";
+      var p1 = document.getElementsByTagName("p")[0];
+      var p2 = document.getElementsByTagName("p")[1];
+      p1.innerText = "Parágrafo alterado com JavaScript";
+      p2.innerText = "Segundo parágrafo alterado com JavaScript";
+      var div = document.getElementsByTagName("div")[0];
+      div.innerText = "Div alterada com JavaScript";
     </script>
   </body>
 </html>
