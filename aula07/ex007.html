@@ -26,8 +26,8 @@
             
         }
         #res {
-            margin-top: 20px;
-            font-size: 18px;
+            margin-top: 30px;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -36,8 +36,8 @@
     <input type="number" name="textn1" id="txtn1"> +
     <input type="number" name="textn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
-    <div>
-        <p id="res">Resultado da soma:</p>
+    <div id="res">    
+        A soma será exibida aqui.
     </div>
     <script>
         function somar() {
@@ -45,7 +45,7 @@
             var n2 = Number(document.getElementById("txtn2").value);
             var res = document.getElementById("res");
             var s = n1 + n2;
-            res.innerHTML = `A soma de ${n1} e ${n2} é igual a ${s}.`;
+            res.innerHTML = `A soma de ${n1} e ${n2} é igual a <strong>${s}</strong>.`;
         }
     </script>
 </body>
