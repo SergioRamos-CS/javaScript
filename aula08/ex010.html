@@ -50,25 +50,23 @@
             if (vel <= 60) {
                 res.innerHTML = 'Velocidade dentro do limite permitido.';
             } else {
-                var multa = (vel - 60) * 5;
-                res.innerHTML = `Velocidade acima do limite! Você foi multado em R$ ${multa.toFixed(2)}.`;
+                res.innerHTML = `Velocidade acima do limite permitido!<br>Você foi multado em R$ ${(vel - 60) * 7}.`;
+
             }
             txtv.value = ''; // Limpa o campo de entrada após a verificação
             txtv.focus(); // Foca novamente no campo de entrada
-            res.style.color = vel <= 60 ? 'green' : 'red'; // Muda a cor do texto com base na velocidade
-            res.style.fontWeight = 'bold'; // Deixa o texto em negrito
-            res.style.backgroundColor = '#ecf0f1'; // Adiciona um fundo claro para destaque
+            res.style.display = 'block'; // Exibe o resultado
+            res.style.backgroundColor = '#ecf0f1'; // Define uma cor de fundo para o resultado
             res.style.padding = '10px'; // Adiciona um pouco de espaçamento interno
-            res.style.borderRadius = '5px'; // Arredonda os cantos do box de resultado
-            res.style.border = '1px solid #bdc3c7'; // Adiciona uma borda sutil
-            res.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)'; // Adiciona uma leve sombra para destaque
-            res.style.transition = 'all 0.3s ease'; // Adiciona uma transição suave para mudanças de estilo
-            res.style.display = 'block'; // Garante que o resultado seja exibido
-            res.style.marginTop = '20px'; // Adiciona margem superior para espaçamento
+            res.style.borderRadius = '5px'; // Arredonda os cantos do resultado
+            res.style.border = '1px solid #bdc3c7'; // Adiciona uma borda ao resultado
+            res.style.color = '#2c3e50'; // Define a cor do texto do resultado
+            res.style.fontWeight = 'bold'; // Deixa o texto do resultado em negrito
             res.style.textAlign = 'center'; // Centraliza o texto do resultado
-            res.style.fontSize = '1.2em'; // Aumenta o tamanho da fonte do resultado
-            res.style.lineHeight = '1.5'; // Melhora a legibilidade com espaçamento entre linhas
-            
+            res.style.marginTop = '20px'; // Adiciona margem superior ao resultado
+            res.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)'; // Adiciona uma sombra ao resultado
+            res.style.transition = 'all 0.3s ease'; // Adiciona uma transição suave para o resultado
+            res.style.display = 'block'; // Garante que o resultado seja exibido
         }
     </script>
 </body>
