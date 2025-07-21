@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>País</title>
+  </head>
+  <body>
+    <h1>Verificação de Nacionalidade</h1>
+    <div id="res"></div>
+    <script>
+      var nacionalidade = window.prompt("Qual é a sua nacionalidade?");
+      var res = window.document.querySelector("div#res");
+      res.innerHTML = `<p>Você é <strong>${nacionalidade}</strong>.</p>`;
+      if (nacionalidade.toLowerCase() === "brasileira") {
+        res.innerHTML = `<p>Você é <strong>BRASILEIRO</strong>.</p>`;
+      } else {
+        res.innerHTML = `<p>Você é <strong>EXTRANGEIRO</strong>.</p>`;
+      }
+    </script>
+  </body>
+</html>
