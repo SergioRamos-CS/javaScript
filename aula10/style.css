@@ -15,9 +15,13 @@ section {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
     padding: 15px;
-    width: 300px;
+    width: 400px;
     margin: auto;
+}
+
+div {
     text-align: center;
+    padding: 10px;
 }
 
 footer {
